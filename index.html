@@ -14,10 +14,18 @@ h1{font-size:clamp(1.6rem,4vw,2.4rem);margin:.5rem 0}
 a.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;padding:.8rem 1.8rem;border-radius:10px;font-weight:700;box-shadow:0 0 18px rgba(238,0,0,.45)}
 a.btn:hover{filter:brightness(1.15)}
 footer{margin-top:1.5rem;font-size:.75rem;color:#888}
-body{grid-template-columns:minmax(0,1fr)}main{width:calc(100% - 2rem);max-width:720px;min-width:0}.marquee{overflow:hidden;width:100%;max-width:100%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}.marquee .track{display:flex;width:max-content;animation:mq 22s linear infinite}.marquee:hover .track{animation-play-state:paused}.marquee .grp{display:flex;flex-shrink:0;white-space:nowrap}.marquee span{padding:0 .9rem}.marquee b{color:var(--red);font-weight:400}@keyframes mq{to{transform:translateX(-50%)}}@media (prefers-reduced-motion:reduce){.marquee .track{animation-duration:60s}}
 @keyframes mv{to{background-position:100% 50%}}
 @media (max-width:480px){main{padding:1.4rem 1rem}img{width:120px;height:120px}.serv{font-size:.8rem}}
 @media (prefers-reduced-motion:reduce){canvas{display:none}}
+.mq{position:relative;width:100%;max-width:720px;overflow:hidden;margin:1.2rem auto;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.mq-t{display:flex;width:max-content;animation:mq 28s linear infinite}
+.mq:hover .mq-t{animation-play-state:paused}
+.mq-g{display:flex;flex-shrink:0;align-items:center}
+.mq-g span{color:#EBEBEB;white-space:nowrap;font-size:clamp(.85rem,2.6vw,1rem);padding:0 .9rem}
+.mq-g b{color:#EE0000;font-weight:700}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mq{-webkit-mask-image:none;mask-image:none}.mq-t{animation:none;width:auto;flex-wrap:wrap;justify-content:center}.mq-g+.mq-g{display:none}.mq-g{flex-wrap:wrap;justify-content:center}}
 </style></head><body>
 <canvas id="bg"></canvas>
 <main>
@@ -26,7 +34,7 @@ body{grid-template-columns:minmax(0,1fr)}main{width:calc(100% - 2rem);max-width:
 <span class="wip">● Sitio en construcción</span>
 <h1>Soporte TI para tu empresa</h1>
 <p>Estamos preparando nuestro sitio. Mientras tanto, ya estamos atendiendo.</p>
-<div class="serv marquee" aria-label="Servicios: Soporte y administración, Mantenimiento preventivo, Redes, Ciberseguridad básica, Programación"><div class="track" aria-hidden="true"><div class="grp"><span>Soporte y administración</span><b>·</b><span>Mantenimiento preventivo</span><b>·</b><span>Redes</span><b>·</b><span>Ciberseguridad básica</span><b>·</b><span>Programación</span><b>·</b></div><div class="grp"><span>Soporte y administración</span><b>·</b><span>Mantenimiento preventivo</span><b>·</b><span>Redes</span><b>·</b><span>Ciberseguridad básica</span><b>·</b><span>Programación</span><b>·</b></div></div></div>
+<div class="mq"><p class="sr">Soporte y administración, Mantenimiento preventivo, Redes, Ciberseguridad básica, Programación</p><div class="mq-t" aria-hidden="true"><div class="mq-g"><span>Soporte y administración</span><b>·</b><span>Mantenimiento preventivo</span><b>·</b><span>Redes</span><b>·</b><span>Ciberseguridad básica</span><b>·</b><span>Programación</span><b>·</b></div><div class="mq-g"><span>Soporte y administración</span><b>·</b><span>Mantenimiento preventivo</span><b>·</b><span>Redes</span><b>·</b><span>Ciberseguridad básica</span><b>·</b><span>Programación</span><b>·</b></div></div></div>
 <a class="btn" href="mailto:info@electronicode.com?subject=Consulta%20desde%20el%20sitio">Contáctenos</a>
 <footer>El Salvador · © 2026 ElectroniCode</footer>
 </main>

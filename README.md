@@ -50,14 +50,6 @@ electronicode-web/
 └── README.md
 ```
 
-## 🚀 Ver en local
-
-```bash
-git clone https://github.com/Salinas900/electronicode-web.git
-cd electronicode-web
-# abrí index.html en el navegador
-```
-
 ## 📬 Contacto
 
 ¿Tu empresa necesita soporte TI? Escribinos a **[info@electronicode.com](mailto:info@electronicode.com)**.
