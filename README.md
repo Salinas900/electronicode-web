@@ -8,7 +8,7 @@
 
 # ElectroniCode
 
-**Soporte TI para pymes · El Salvador**
+**Soporte TI para pequeñas y medianas empresas · El Salvador**
 
 *Construyendo el futuro digital de tu empresa, paso a paso.*
 
@@ -28,7 +28,11 @@
 
 ---
 
-## 🛠️ Servicios
+## Acerca de ElectroniCode
+
+ElectroniCode brinda soporte de tecnología de la información a pequeñas y medianas empresas en El Salvador, con atención cercana y un enfoque preventivo.
+
+## Servicios
 
 | | Servicio |
 |:-:|:--|
@@ -38,27 +42,19 @@
 | 🛡️ | Ciberseguridad básica |
 | 💻 | Programación |
 
-## ⚡ Sobre este repositorio
+## Sobre este repositorio
 
-Landing temporal de **ElectroniCode** mientras se construye el sitio completo. Es una sola página estática, sin dependencias ni build.
+Este repositorio aloja el sitio web oficial de ElectroniCode, que actualmente se encuentra en construcción. Se publica únicamente con fines de alojamiento y no constituye un proyecto de código abierto.
 
-```
-electronicode-web/
-├── index.html      # landing (fondo animado en canvas)
-├── logo.svg        # monograma EC (© derechos reservados)
-├── LICENSE
-└── README.md
-```
+## Contacto
 
-## 📬 Contacto
+Para consultas sobre nuestros servicios, escríbanos a **[info@electronicode.com](mailto:info@electronicode.com)**.
 
-¿Tu empresa necesita soporte TI? Escribinos a **[info@electronicode.com](mailto:info@electronicode.com)**.
-
-
-## Licencia
+## Derechos y uso
 
 © 2026 ElectroniCode. Todos los derechos reservados.
-El logo y la marca ElectroniCode no son de uso libre. Ver [LICENSE](LICENSE).
+
+El código fuente, el diseño, los textos, el logotipo y la marca ElectroniCode son propiedad exclusiva de ElectroniCode. Que este repositorio sea público no concede ninguna licencia ni permiso para copiar, modificar, distribuir, reutilizar o crear obras derivadas de su contenido, total o parcialmente, sin autorización previa y por escrito. Consulte el archivo [LICENSE](LICENSE).
 
 <div align="center">
 <br>
