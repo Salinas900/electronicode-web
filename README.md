@@ -45,7 +45,8 @@ Landing temporal de **ElectroniCode** mientras se construye el sitio completo. E
 ```
 electronicode-web/
 ├── index.html      # landing (fondo animado en canvas)
-├── logo.svg        # monograma EC
+├── logo.svg        # monograma EC (© derechos reservados)
+├── LICENSE
 └── README.md
 ```
 
@@ -60,6 +61,13 @@ cd electronicode-web
 ## 📬 Contacto
 
 ¿Tu empresa necesita soporte TI? Escribinos a **[info@electronicode.com](mailto:info@electronicode.com)**.
+
+
+## ⚖️ Licencia y marca
+
+Logo y marca **ElectroniCode** © 2026. Todos los derechos reservados. No se permite su uso sin autorización.
+
+El código está publicado para que se pueda ver, pero el logo y la marca no son de uso libre. Detalles en [`LICENSE`](LICENSE).
 
 <div align="center">
 <br>
