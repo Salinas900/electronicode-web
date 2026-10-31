@@ -63,11 +63,10 @@ cd electronicode-web
 ¿Tu empresa necesita soporte TI? Escribinos a **[info@electronicode.com](mailto:info@electronicode.com)**.
 
 
-## ⚖️ Licencia y marca
+## Licencia
 
-Logo y marca **ElectroniCode** © 2026. Todos los derechos reservados. No se permite su uso sin autorización.
-
-El código está publicado para que se pueda ver, pero el logo y la marca no son de uso libre. Detalles en [`LICENSE`](LICENSE).
+© 2026 ElectroniCode. Todos los derechos reservados.
+El logo y la marca ElectroniCode no son de uso libre. Ver [LICENSE](LICENSE).
 
 <div align="center">
 <br>
