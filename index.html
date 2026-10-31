@@ -22,8 +22,8 @@ body{grid-template-columns:minmax(0,1fr)}main{width:calc(100% - 2rem);max-width:
 @font-face{font-family:"PixelTiny";src:url(fonts/PixelTiny.ttf) format("truetype");font-display:swap}
 h1{font-family:"Spaceport","IBM Plex Mono",monospace;letter-spacing:.04em}
 @property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
-.wip{position:relative;font-family:"PixelTiny","IBM Plex Mono",monospace;font-size:clamp(20px,4.5vw,26px);letter-spacing:.12em;line-height:1;color:#EBEBEB;background:#000;border:none!important;border-radius:999px;padding:.7rem 1.4rem;isolation:isolate}
-.wip .dot{color:#EE0000}
+.wip{position:relative;font-family:"PixelTiny","IBM Plex Mono",monospace;font-size:32px;letter-spacing:.12em;line-height:1;color:#EBEBEB;background:#000;border:none!important;border-radius:999px;padding:.7rem 1.4rem;isolation:isolate}
+.wip .dot{color:#EE0000;font-size:.6em;vertical-align:middle}
 .wip::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:conic-gradient(from var(--a),transparent 0 60%,#EE0000 75%,#EBEBEB 85%,transparent 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:shine 6s linear infinite;z-index:-1}
 @keyframes shine{to{--a:360deg}}
 @media (prefers-reduced-motion:reduce){.wip::before{animation:none;background:#EE0000}}
