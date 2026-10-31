@@ -1,0 +1,42 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ElectroniCode · Soporte TI para tu empresa</title>
+<style>
+:root{--red:#EE0000;--plat:#EBEBEB;--gun:#454546;--blue:#758ECD}
+*{margin:0;box-sizing:border-box}
+body{background:#000 linear-gradient(120deg,#000 30%,#4a0000 50%,#000 70%);background-size:300% 300%;animation:mv 6s ease-in-out infinite alternate;color:var(--plat);font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;min-height:100vh;display:grid;place-items:center;overflow-x:hidden}
+canvas{position:fixed;inset:0;z-index:0}
+main{position:relative;z-index:1;text-align:center;padding:2rem;max-width:720px;background:rgba(0,0,0,.55);border:1px solid var(--gun);border-radius:18px;backdrop-filter:blur(6px);margin:1rem}
+img{width:160px;height:160px}
+.slogan{color:var(--red);text-shadow:0 0 12px rgba(238,0,0,.6);margin:1rem 0}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);margin:.5rem 0}
+.wip{display:inline-block;border:1px solid var(--blue);color:var(--blue);padding:.3rem .8rem;border-radius:999px;font-size:.8rem;margin-bottom:1rem}
+.serv{color:#bbb;font-size:.9rem;line-height:1.7;margin:1rem 0 1.5rem}
+a.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;padding:.8rem 1.8rem;border-radius:10px;font-weight:700;box-shadow:0 0 18px rgba(238,0,0,.45)}
+a.btn:hover{filter:brightness(1.15)}
+footer{margin-top:1.5rem;font-size:.75rem;color:#888}
+@keyframes mv{to{background-position:100% 50%}}
+@media (max-width:480px){main{padding:1.4rem 1rem}img{width:120px;height:120px}.serv{font-size:.8rem}}
+@media (prefers-reduced-motion:reduce){canvas{display:none}}
+</style></head><body>
+<canvas id="bg"></canvas>
+<main>
+<img src="logo.svg" alt="Logo ElectroniCode">
+<p class="slogan">Construyendo el futuro digital de tu empresa, paso a paso.</p>
+<span class="wip">● Sitio en construcción</span>
+<h1>Soporte TI para tu empresa</h1>
+<p>Estamos preparando nuestro sitio. Mientras tanto, ya estamos atendiendo.</p>
+<p class="serv">Soporte y administración · Mantenimiento preventivo · Redes · Ciberseguridad básica · Programación</p>
+<a class="btn" href="mailto:info@electronicode.com?subject=Consulta%20desde%20el%20sitio">Contáctenos</a>
+<footer>El Salvador · © 2026 ElectroniCode</footer>
+</main>
+<script>
+const c=document.getElementById('bg'),x=c.getContext('2d');let w,h,p=[];
+function r(){w=c.width=innerWidth;h=c.height=innerHeight;p=Array.from({length:Math.min(120,w/11)},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.8,vy:(Math.random()-.5)*.8}))}
+addEventListener('resize',r);r();
+(function f(){x.clearRect(0,0,w,h);
+x.strokeStyle='rgba(117,142,205,.18)';for(let i=0;i<w;i+=48){x.beginPath();x.moveTo(i,0);x.lineTo(i,h);x.stroke()}for(let j=0;j<h;j+=48){x.beginPath();x.moveTo(0,j);x.lineTo(w,j);x.stroke()}
+for(const a of p){a.x=(a.x+a.vx+w)%w;a.y=(a.y+a.vy+h)%h}
+for(let i=0;i<p.length;i++)for(let j=i+1;j<p.length;j++){const d=Math.hypot(p[i].x-p[j].x,p[i].y-p[j].y);if(d<140){x.strokeStyle=`rgba(238,0,0,${.7*(1-d/140)})`;x.beginPath();x.moveTo(p[i].x,p[i].y);x.lineTo(p[j].x,p[j].y);x.stroke()}}
+for(const a of p){x.fillStyle='rgba(117,142,205,.8)';x.fillRect(a.x-1.5,a.y-1.5,3,3)}
+requestAnimationFrame(f)})();
+</script></body></html>
